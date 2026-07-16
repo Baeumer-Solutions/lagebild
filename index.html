@@ -173,9 +173,14 @@ body{background:#F3F5F8;color:#1B2430;font-family:'Montserrat',system-ui,sans-se
 (function(){
   var K=null, gefiltert=[], gezeigt=0, SCHRITT=24;
   var $=function(id){return document.getElementById(id);};
-  var ARTEN={city:"Stadt",building:"Gebäude",port:"Hafen",river:"Fluss",lake:"See",coast:"Küste",
-    mountain:"Berg",forest:"Wald",airport:"Flughafen",beach:"Strand",landscape:"Landschaft",
-    meteo:"Wetter",indoor:"Innen",observatory:"Sternwarte"};
+  // Vollstaendig aus dem echten Katalog gezogen. "traffic" ist mit 1095 Kameras die
+  // zweitgroesste Gruppe und fuer Krisenvorsorge die interessanteste, die hatte ich im
+  // ersten Anlauf schlicht vergessen. [16.07.2026]
+  var ARTEN={traffic:"Verkehr",city:"Stadt",village:"Dorf",square:"Platz",building:"Gebäude",
+    port:"Hafen",river:"Fluss",lake:"See",coast:"Küste",beach:"Strand",mountain:"Berg",
+    forest:"Wald",airport:"Flughafen",landscape:"Landschaft",meteo:"Wetter",indoor:"Innen",
+    observatory:"Sternwarte",sportArea:"Sport"};
+  var WICHTIG=["traffic","city","river","port","airport","coast","lake","mountain"];
   function bild(id){return "https://imgproxy.windy.com/_/preview/plain/current/"+id+"/original.jpg";}
   function fuellen(sel,werte,platz){
     sel.innerHTML='<option value="">'+platz+'</option>';
