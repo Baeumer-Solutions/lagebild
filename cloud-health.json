@@ -1,1 +1,1 @@
-{"channels": ["mail", "telegram", "website"], "checked_at": "2026-11-07T05:15:52.007035+00:00", "date": "2026-11-07", "plan_until": "2026-11-22", "status": "verified_production", "website_sha256": "2071c9a271aab0ddd4b88d2ddb908161628c37e42aedfd1253eecf5ab3345a74"}
+{"channels": ["mail", "post_mail", "telegram", "website"], "checked_at": "2026-11-10T05:15:15.357875+00:00", "date": "2026-11-10", "plan_until": "2026-11-22", "status": "verified_production", "website_sha256": "9f9bea8e905fdadaefabe7d0e2d296ca3d93414eb7cb108ccf8201465f38f508"}
